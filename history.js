@@ -8,11 +8,7 @@ History.attachSchema(new SimpleSchema({
         type: String
     },
     user: {
-        type: String,
-        optional: true,
-        autoValue: function() {
-            if (this.isInsert && this.userId) return this.userId;
-        }
+        type: Refs.Schema
     },
     date: {
 		type: Date,
