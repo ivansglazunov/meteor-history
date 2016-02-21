@@ -6,11 +6,10 @@ meteor add ivansglazunov:history
 
 History for logging.
 
-## Documentation
-
 * Typed logging.
 * Data attribute.
 * Links to document in any collection.
+* Insert, update and remove watching.
 
 ## Using
 
@@ -39,7 +38,17 @@ MyCollection.after.update(function(userId, doc) {
 });
 ```
 
+Or wrap your collection:
+```js
+History.watchInsert(MyCollection);
+History.watchUpdate(MyCollection);
+History.watchRemove(MyCollection);
+```
+
 ## Versions
+
+### 0.0.2
+* Watchers.
 
 ### 0.0.1
 * User field is Ref.

@@ -1,6 +1,6 @@
 Package.describe({
   name: 'ivansglazunov:history',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'History for logging.',
   git: 'https://github.com/ivansglazunov/meteor-history.git',
   documentation: 'README.md'
